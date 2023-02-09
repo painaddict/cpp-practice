@@ -1,3 +1,7 @@
+/*Given an arbitrary m * n matrix of a combination of 
+non-zero and one zero value, zero all the elements of
+the row and column where the zero value is located.*/
+
 #include <iostream>
 
 using namespace std;
