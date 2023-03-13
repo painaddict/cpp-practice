@@ -3,7 +3,7 @@
 
 int q2() {
 	for (int i = 0; i <= 100; i++) {
-		std::cout << std::cout.width(2) << i << std::cout.width(6) << i*i << std::endl; // idk what i did
+		std::cout << std::cout.width(2) << i << std::cout.width(6) << i * i << std::endl; // idk what i did
 	}
 	return 0;
 }
