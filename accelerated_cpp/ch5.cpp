@@ -38,6 +38,28 @@ return fail;
 }
 
 //q9 
+int check_case(string word) {
+	char first_char = word[0];
+	if (first_char >= 65 && first_char <= 90) {
+		return 1; // uppercase
+	} else if (first_char >= 97 && first_char <= 172) {
+		return 0; // lowercase
+	} else {
+		cout << "Word does not start with a valid letter!" << endl;
+		return -1;
+	}
+
+}
+int q9() {
+	// write a program to write the lowercase words in the input
+	// followed by the uppercase words.
+	vector<string> inputs;
+	string x;
+	while (cin >> x) {
+		inputs.push_back(x);
+	}
+
+}
 
 int main() {
 	check_palindrome("plisilp");
