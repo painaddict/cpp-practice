@@ -1,7 +1,5 @@
 #include <iostream>
 
-
-
 void q_1(void) {
 	// WAP to insert values in an array at a given place (sorted list) [DO NOT USE VECTOR]
 
@@ -121,9 +119,36 @@ void q_3(void) {
 	}
 }
 
+void q_4(void) {
+	// WAP to display the elements of the linear array
+	std::cout << "Input the size of the array as an int: ";
+	
+	// take the input size and initialise an array
+	int size;
+	std::cin >> size;
+
+	int array[size];
+
+	// take the array elements as input
+	int buffer;
+	std::cout << "Enter the elements separated by a space: ";
+	for (int i = 0; i < size; i++) {
+		std::cin >> buffer;
+		array[i] = buffer;
+	}
+
+	// iterate and display all the values
+
+	for (int i = 0; i < size; i++) {
+		std::cout << array[i] << " ";
+	}
+
+}
+
 int main(void) {
 	//q_1();
 	//q_2();
-	q_3();
+	//q_3();
+	q_4();
 	return 0;
 }
