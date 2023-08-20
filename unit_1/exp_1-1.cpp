@@ -81,13 +81,49 @@ void q_2(void) {
 }
 
 void q_3(void) {
-	// WAP ro find the location of a given element. 
+	// WAP to find the location of a given element. 
+	std::cout << "Input the size of the array as an int: ";
 	
+	// take the input size and initialise an array
+	int size;
+	std::cin >> size;
+
+	int array[size];
+
+	// take the array elements as input
+	int buffer;
+	std::cout << "Enter the elements separated by a space: ";
+	for (int i = 0; i < size; i++) {
+		std::cin >> buffer;
+		array[i] = buffer;
+	}
+
+	int culprit;
+
+	std::cout << "Enter the int value to be found in the array: ";
+	std::cin >> culprit;
+
+	// define a boolean for if the value is found
+	bool found = false;
+
+	// iterate and compare
+	for (int i = 0; i < size; i++) {
+		if (array[i] == culprit) {
+			found = true;
+			std::cout << "Found the element " << culprit << " at index " << i << std::endl;
+			break;
+		}
+	}
+
+	// if element is not found
+	if (!found) {
+		std::cout << "Element not found in the array!";
+	}
 }
 
 int main(void) {
 	//q_1();
-	q_2();
-
+	//q_2();
+	q_3();
 	return 0;
 }
