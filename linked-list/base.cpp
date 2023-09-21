@@ -1,9 +1,5 @@
 #include <iostream>
-
-typedef struct Node {
-	int store;
-	struct Node * next_node;
-} node;
+#include "defs.h"
 
 int main(void) {
 	// create nodes
