@@ -4,7 +4,7 @@ int main(void) {
 	// implement bubble sort
 	// compares two adjacent elements and swaps them until they are in the intended order.
 
-	int array[] = {69, 79, 169, 269, 969};
+	int array[] = {79, 69, 669, 269, 169};
 	int size  = sizeof(array) / sizeof(array[0]);
 
 	int temp;
