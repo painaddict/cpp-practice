@@ -23,8 +23,11 @@ int main(void) {
 			}
 		}
 	}
+	
 	// print the result
 	for (int i = 0; i < size; i++) {
-		std::cout << array[i] << " " << std::endl;
+		std::cout << array[i] << " ";
 	}
+
+	return 0;
 }
