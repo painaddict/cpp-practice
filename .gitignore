@@ -2,3 +2,5 @@
 *.o
 *.a
 *.docx
+cmake-build-debug/
+CMakeLists.txt

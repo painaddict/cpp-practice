@@ -2,7 +2,7 @@
 #include "implementation.hpp"
 
 stack* create_stack() {
-	stack* s = new stack();
+	auto* s = new stack();
 	return s;
 }
 
@@ -49,10 +49,10 @@ void print_stack(stack* s) {
 	}
 }
 
-int main(void) {
+int main_d() {
 	// create stack
 	stack* new_stack = create_stack();
-	
+
 	// fill with elements
 	push(new_stack, 1);
 	push(new_stack, 2);
@@ -64,5 +64,5 @@ int main(void) {
 
 	// remember to delete the allocated shit
 	delete new_stack;
-
+    return 1;
 }

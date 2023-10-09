@@ -1,7 +1,7 @@
 #include <iostream>
 #include <stack>
 
-int main(void) {
+int main_d2() {
 	// implement stack
 	std::stack<int> new_stack;
 
@@ -13,5 +13,5 @@ int main(void) {
 	new_stack.push(82);
 
 	std::cout << new_stack.top();
-
+	return 1;
 }
